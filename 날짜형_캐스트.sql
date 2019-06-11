@@ -16,3 +16,15 @@ select (date_part('year', now())- date_part('year', hire_date))*12,
 		(date_part('month', now())- date_part('month', hire_date))
   from employees;
 
+select now(), now()+ interval'12 hour';
+select now(), now()- interval'12 hour';
+
+--casting
+select now(), cast(now() as date);
+
+select '1'::integer;
+select '2019-12-31'::date;
+
+
+
+ 
